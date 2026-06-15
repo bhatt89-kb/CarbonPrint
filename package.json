@@ -8,7 +8,7 @@
     "dev": "concurrently \"node server/server.cjs\" \"vite\"",
     "dev:frontend": "vite",
     "dev:backend": "node server/server.cjs",
-    "build": "vite build",
+    "build": "npx vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
