@@ -2,24 +2,28 @@
   "name": "ecotrack",
   "version": "1.0.0",
   "description": "Carbon Footprint Tracker & Reduction Platform",
+  "homepage": "https://bhatt89-kb.github.io/CarbonPrint",
   "type": "module",
   "scripts": {
     "dev": "concurrently \"node server/server.cjs\" \"vite\"",
     "dev:frontend": "vite",
     "dev:backend": "node server/server.cjs",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "express": "^4.21.0",
-    "better-sqlite3": "^11.6.0",
-    "jsonwebtoken": "^9.0.2",
     "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
+    "better-sqlite3": "^11.6.0",
     "chart.js": "^4.4.6",
-    "concurrently": "^9.1.0"
+    "concurrently": "^9.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^6.0.0"
   }
 }
