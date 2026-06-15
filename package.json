@@ -1,0 +1,25 @@
+{
+  "name": "ecotrack",
+  "version": "1.0.0",
+  "description": "Carbon Footprint Tracker & Reduction Platform",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node server/server.cjs\" \"vite\"",
+    "dev:frontend": "vite",
+    "dev:backend": "node server/server.cjs",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "better-sqlite3": "^11.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "chart.js": "^4.4.6",
+    "concurrently": "^9.1.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
