@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/CarbonPrint/',
   root: '.',
   server: {
     port: 5173,
